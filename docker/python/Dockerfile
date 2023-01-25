@@ -2,7 +2,7 @@ FROM python:3.7-alpine
 
 RUN apk update && apk add --no-cache --virtual bash gcc musl-dev linux-headers jpeg-dev zlib-dev mariadb-dev libffi-dev
 RUN ls
-RUN chmod +x manage.py
+
 
 # install pypi packages
 COPY requirements.txt /requirements.txt
